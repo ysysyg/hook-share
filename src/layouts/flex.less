@@ -1,0 +1,36 @@
+@direction: row, row-reverse, column, column-reverse;
+@flow: wrap, nowrap;
+@justify-contents: {
+  start: flex-start;
+  end: flex-end;
+  center: center;
+  between: space-between;
+  around: space-around;
+};
+@align-items: {
+  start: flex-start;
+  end: flex-end;
+  center: center;
+  baseline: baseline;
+  stretch: stretch;
+};
+
+.flex {
+  each(@direction, .(@dr) {
+    each(@flow, .(@fw) {
+      &-@{dr}-@{fw} {
+        display: flex;
+        flex-flow: @dr @fw;
+      }
+    });
+  });
+
+  each(@justify-contents, .(@justify, @justify-name) {
+    each(@align-items, .(@align, @align-name) {
+      &-@{justify-name}-@{align-name} {
+        justify-content: @justify;
+        align-items: @align;
+      }
+    });
+  });
+}
