@@ -18,9 +18,7 @@ $ yarn start
 
 ### 用来做什么
 
-Hooks 意为钩⼦, React Hooks 就是⼀堆钩⼦函数, React 通过这些钩⼦函数对函数型组件进⾏增强,
-
-让函数型组件可以**存储状态**, 可以拥有**处理副作⽤**的能⼒. 让开发者在不使⽤类组件的情况下, 实现相同的功能
+Hooks 意为钩⼦, React Hooks 就是⼀堆钩⼦函数, React 通过这些钩⼦函数对函数型组件进⾏增强, 让函数型组件可以**存储状态**, 可以拥有**处理副作⽤**的能⼒. 让开发者在不使⽤类组件的情况下, 实现相同的功能
 
 不同的钩⼦函数提供了不同的功能
 
@@ -104,9 +102,9 @@ useMemo 会缓存计算结果. 如果监测值没有发⽣变化, 即使组件�
 
 随着浏览器的功能不断增强，越来越多的网站开始考虑，将大量数据储存在客户端，这样可以减少从服务器获取数据，直接从本地获取数据。现有的浏览器数据储存方案，都不适合储存大量数据：Cookie 的大小不超过 4KB，且每次请求都会发送回服务器；LocalStorage 在 2.5MB 到 10MB 之间（各家浏览器不同），而且不提供搜索功能，不能建立自定义的索引。所以，需要一种新的解决方案，这就是 IndexedDB 诞生的背景
 
-[兼容性][https://caniuse.com/?search=indexdb]
+[兼容性](https://caniuse.com/?search=indexdb)
 
-[应用](https://test-miao.bixin.cn/miao-hc/recruit/plan-application)
+[业务应用](https://test-miao.bixin.cn/miao-hc/recruit/plan-application)
 
 #### 特点
 
@@ -119,7 +117,7 @@ useMemo 会缓存计算结果. 如果监测值没有发⽣变化, 即使组件�
 
 #### use-dexie
 
-[React Hooks to use Dexie.js IndexDB library][https://www.npmjs.com/package/use-dexie]
+[React Hooks to use Dexie.js IndexDB library](https://www.npmjs.com/package/use-dexie)
 
 ## 样式
 
@@ -182,4 +180,4 @@ function Index() {
 
 # 参考链接
 
-[浏览器数据库 IndexedDB 入门教程][http://www.ruanyifeng.com/blog/2018/07/indexeddb.html]
+[浏览器数据库 IndexedDB 入门教程](http://www.ruanyifeng.com/blog/2018/07/indexeddb.html)
